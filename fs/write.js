@@ -4,7 +4,7 @@ const path = require("path");
 let dir = '../directory/txtFiles';
 let text = "This is the content to be written in the file."
 
-fs.writeFile(path.join(dir,'new-async.txt'), text, (err) => {
+fs.writeFile(path.join(dir,'new-async.txt'), text, (err, data) => {
     if(err) {
         console.error(err);
         return;

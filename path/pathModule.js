@@ -1,3 +1,4 @@
+const path = require('path');
 
 console.log(process.env.PATH);
 // Prints: '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
@@ -8,7 +9,7 @@ process.env.PATH.split(path.delimiter);
 console.log(process.env.PATH);
 // Prints: 'C:\Windows\system32;C:\Windows;C:\Program Files\node\'
 
-process.env.PATH.split(path.delimiter);
+process.env.PATH.split(';');
 // Returns ['C:\\Windows\\system32', 'C:\\Windows', 'C:\\Program Files\\node\\']
 
 path.basename('/foo/bar/baz/asdf/quux.html');
